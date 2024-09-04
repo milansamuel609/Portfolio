@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="name_container">
+            <h1 class="name">Milan P Samuel</h1>
+        </div>
+
+        <div class="nav_bar">
+            <a href="/index.html">Home</a>
+            <a href="/HtmlPages/about.html">About Me</a>
+            <a href="/HtmlPages/project.html">Project</a>
+            <a href="/HtmlPages/blog.html">Blog</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+
+        <div class="action_icons">
+            <a href="https://www.linkedin.com/in/milan-p-samuel-b54290242/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/milansamuel609"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+
+    </header>
+
+    <main class="contact_page">
+        <section class="contact_form_section">
+            <h2>Contact Me</h2>
+            <form action="mailto:milansamuel609@gmail.com" method="post" enctype="text/plain">
+                <div class="form_group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form_group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form_group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form_group">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_name">
+            <h4>© 2024 Milan P Samuel</h4>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
