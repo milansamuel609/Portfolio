@@ -3,52 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Project</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Milan P Samuel - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-    <header>
-        <div class="name_container">
-            <h1 class="name">Milan P Samuel</h1>
-        </div>
+<body>
+    <div class="bg-animation"></div>
 
-        <div class="nav_bar">
-            <a href="index.html">Home</a>
-            <a href="HtmlPages/about.html">About Me</a>
-            <a href="HtmlPages/project.html">Project</a>
-            <a href="HtmlPages/blog.html">Blog</a>
-            <a href="HtmlPages/contact.html">Contact Me</a>
-        </div>
-
-        <div class="action_icons">
-            <a href="https://www.linkedin.com/in/milan-p-samuel-b54290242/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/milansamuel609"><i class="fa-brands fa-square-github"></i></a>
-        </div>
-
+    <header id="header">
+        <nav>
+            <div class="logo">Milan P Samuel</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/milan-p-samuel-b54290242/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/milansamuel609" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://drive.google.com/file/d/1SmdknNmEg7B-uVnqK506P99U1MAsFhL0/view?usp=sharing" target="_blank"><i class="fa-solid fa-file"></i></a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
 
-    <main class="first_page">
-        <div class="intro_container">
-            <h3 class="top_head"> “Computers Are Like Old Testament Gods; Lots Of Rules And No Mercy”</h3>
-            <span class="primary">Hello There</span>
-            <h1 class="heading_name">I'm Milan</h1>
-            <p class="short_intro">A Software Engineer And A Passionate Programmer</p>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="greeting">Hello There! 👋</div>
+                <h1>I'm Milan P Samuel</h1>
+                <p class="subtitle">Software Engineer & Passionate Programmer</p>
+                <p style="color: var(--text-dim); margin-bottom: 2rem;">
+                    "Computers Are Like Old Testament Gods; Lots Of Rules And No Mercy"
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <div class="profile-circle">
+                        <img src="Images/Milan_Image.jpg" alt="Profile Picture" class="profile-pic" />
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="milan_image">
-            <img src="/Images/Milan_Image.png" alt="Milan" width="500px" height="800px">
+    <section class="section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I am Milan P Samuel, currently in my final year pursuing BTech CSE with specialization in Gaming Technology from VIT Bhopal. I am basically from Kerala, also known as "God's Own Country".
+                </p>
+                <p>
+                    I am both a programmer and a game developer who loves programming and learning new technical stuff. Over the past 2 years, I've faced many challenges and opportunities that helped me grow and gain lots of experience.
+                </p>
+                <p>
+                    My hobbies include playing badminton and gaming. I'm passionate about creating innovative solutions and building amazing projects that make a difference.
+                </p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Programming Languages</div>
+                </div>
+            </div>
         </div>
+    </section>
 
-    </main>
+    <section class="section" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-java"></i></div>
+                <div class="skill-name">Java</div>
+                <div class="skill-level">Advanced</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                <div class="skill-name">Python</div>
+                <div class="skill-level">Intermediate</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <div class="skill-name">HTML & CSS</div>
+                <div class="skill-level">Advanced</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-level">Basic</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <div class="skill-name">MySQL</div>
+                <div class="skill-level">Intermediate</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                <div class="skill-name">Git & GitHub</div>
+                <div class="skill-level">Intermediate</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                <div class="skill-name">AWS</div>
+                <div class="skill-level">Intermediate</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                <div class="skill-name">Docker</div>
+                <div class="skill-level">Intermediate</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-jenkins"></i></div>
+                <div class="skill-name">Jenkins</div>
+                <div class="skill-level">Intermediate</div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-unity"></i></div>
+                <div class="skill-name">Unity</div>
+                <div class="skill-level">Intermediate</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-cloud-sun"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Weather WebApp</h3>
+                    <p class="project-description">
+                        A simple weather forecasting website that shows daily and weekly weather forecasts using OpenWeatherMap API for live weather data.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/milansamuel609/WeatherWebApp" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Bank System</h3>
+                    <p class="project-description">
+                        A simple bank system with check balance, withdraw, and deposit features. Built with Java Swing for the GUI with a minimum deposit requirement of Rs 100.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Swing</span>
+                        <span class="tag">GUI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/milansamuel609/BankSystem" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-stopwatch"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Stop Watch</h3>
+                    <p class="project-description">
+                        A functional stopwatch application built with web technologies featuring start, stop, and reset capabilities with a clean user interface.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/milansamuel609/StopWatch" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-intro">
+                <p>
+                    Have a project in mind or just want to chat? Feel free to reach out! I'm always open to discussing new opportunities and collaborations.
+                </p>
+            </div>
+            <form class="contact-form" action="mailto:milansamuel609@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; position: relative; z-index: 1;">Send Message</button>
+            </form>
+        </div>
+    </section>
 
     <footer>
-        <div class="footer_name">
-            <h4>© 2024 Milan P Samuel</h4>
+        <div class="footer-content">
+            <p class="copyright">© 2024 Milan P Samuel. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src = "script.js"></script>
 </body>
 </html>
