@@ -949,7 +949,7 @@ footer {
 .menu-toggle {
   display: none;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   cursor: pointer;
   z-index: 1001;
 }
