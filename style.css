@@ -1316,6 +1316,7 @@ footer {
     padding: 2rem;
   }
 
+  /* Increasing the speed of scroll for mobile devices */
   .skills-scroll-inner {
     animation-duration: 12s !important; /* faster scroll on mobile */
   }
