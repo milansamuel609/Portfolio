@@ -1315,6 +1315,10 @@ footer {
   .contact-form {
     padding: 2rem;
   }
+
+  .skills-scroll-inner {
+    animation-duration: 12s !important; /* faster scroll on mobile */
+  }
 }
 
 .skills-scroll-outer {
@@ -1339,7 +1343,7 @@ footer {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-110%);
+    transform: translateX(-100%);
   }
 }
 
