@@ -1316,3 +1316,37 @@ footer {
     padding: 2rem;
   }
 }
+
+.skills-scroll-outer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto 4rem auto;
+  padding: 1.5rem 0;
+}
+
+/* Horizontal scroll animation for skills section */
+.skills-scroll-inner {
+  display: flex;
+  gap: 2rem;
+  min-width: 100%;
+  animation: skills-scroll-animate 30s linear infinite;
+  will-change: transform;
+}
+
+@keyframes skills-scroll-animate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-130%);
+  }
+}
+
+/* Ensure skill-card looks good in row layout */
+.skills-scroll-inner .skill-card {
+  min-width: 170px;
+  max-width: 190px;
+  flex: 0 0 auto;
+  margin: 0;
+}
