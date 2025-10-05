@@ -6,7 +6,9 @@ window.addEventListener("DOMContentLoaded", function () {
   // Infinite scroll: duplicate skills for seamless animation
   const skillScroll = document.getElementById("skills-scroll");
   if (skillScroll) {
-    skillScroll.innerHTML += skillScroll.innerHTML;
+    const originalHTML = skillScroll.innerHTML;
+    // Duplicate enough times to ensure smooth scrolling
+    skillScroll.innerHTML = originalHTML + originalHTML + originalHTML + originalHTML;
   }
 
   // ----------------------------
