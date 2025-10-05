@@ -347,6 +347,15 @@ nav {
   overflow: hidden;
 }
 
+.profile-circle .profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  display: block;
+}
+
 /* About Section - Enhanced */
 .section {
   padding: 5rem 5%;
@@ -1257,7 +1266,6 @@ footer {
     max-width: 300px;
     height: calc(100vh - 80px);
     background: rgba(10, 10, 15, 0.98);
-    backdrop-filter: blur(20px);
     flex-direction: column;
     align-items: center;
     padding: 3rem 2rem;
