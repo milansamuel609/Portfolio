@@ -1316,9 +1316,97 @@ footer {
     padding: 2rem;
   }
 
-  /* Increasing the speed of scroll for mobile devices */
   .skills-scroll-inner {
-    animation-duration: 12s !important; /* faster scroll on mobile */
+    animation-duration: 40s !important;
+    gap: 1.5rem;
+  }
+
+  .skills-scroll-inner .skill-card {
+    min-width: 140px;
+    width: 140px;
+  }
+
+  .blog-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem 1.5rem;
+  }
+
+  .blog-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .blog-title {
+    font-size: 1.5rem;
+  }
+
+  .blog-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .blog-description {
+    font-size: 1rem;
+  }
+
+  .blog-topic {
+    padding: 1.5rem;
+  }
+
+  .blog-topic > i {
+    font-size: 1.5rem;
+  }
+
+  .blog-topic h4 {
+    font-size: 1.2rem;
+  }
+
+  .blog-topic > p {
+    font-size: 0.95rem;
+  }
+
+  .language-links {
+    flex-direction: column;
+  }
+
+  .lang-link {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 1.2rem;
+  }
+
+  .concept-list li {
+    font-size: 0.95rem;
+    padding: 0.9rem 1.2rem;
+  }
+
+  .resource-link {
+    font-size: 0.95rem;
+    padding: 0.9rem 1.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .resource-item {
+    padding: 1.5rem;
+  }
+
+  .resource-item i {
+    font-size: 2rem;
+  }
+
+  .resource-item h4 {
+    font-size: 1.1rem;
+  }
+
+  .resource-item p {
+    font-size: 0.9rem;
   }
 }
 
@@ -1334,24 +1422,24 @@ footer {
 .skills-scroll-inner {
   display: flex;
   gap: 2rem;
-  min-width: 100%;
-  animation: skills-scroll-animate 30s linear infinite;
+  width: fit-content;
+  animation: skills-scroll-animate 40s linear infinite;
   will-change: transform;
 }
 
 @keyframes skills-scroll-animate {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-100%);
+  to {
+    transform: translateX(-25%);
   }
 }
 
 /* Ensure skill-card looks good in row layout */
 .skills-scroll-inner .skill-card {
   min-width: 170px;
-  max-width: 190px;
-  flex: 0 0 auto;
+  width: 170px;
+  flex-shrink: 0;
   margin: 0;
 }
