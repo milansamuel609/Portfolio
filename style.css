@@ -1339,7 +1339,7 @@ footer {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-130%);
+    transform: translateX(-110%);
   }
 }
 
