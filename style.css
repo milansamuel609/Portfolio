@@ -1443,3 +1443,96 @@ footer {
   flex-shrink: 0;
   margin: 0;
 }
+
+/* Work With Me Section */
+.work-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.work-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.work-intro p {
+  font-size: 1.2rem;
+  color: var(--text-dim);
+  line-height: 1.8;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.work-card {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 212, 255, 0.05),
+    rgba(124, 58, 237, 0.05)
+  );
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 20px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.work-card i {
+  font-size: 2.8rem;
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+}
+
+.work-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.work-card p {
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+
+.work-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary);
+  box-shadow: 0 15px 35px rgba(0, 212, 255, 0.3);
+}
+
+.work-form-wrapper {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 212, 255, 0.03),
+    rgba(124, 58, 237, 0.03)
+  );
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 25px;
+  padding: 3rem;
+}
+
+.work-form-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.work-form select {
+  width: 100%;
+  padding: 1.2rem;
+  background: rgba(10, 10, 15, 0.5);
+  border: 2px solid rgba(0, 212, 255, 0.2);
+  border-radius: 12px;
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+}
+
+.work-note {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
