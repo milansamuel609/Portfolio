@@ -133,10 +133,12 @@ window.addEventListener("DOMContentLoaded", function () {
     statObserver.observe(card);
   });
 
-  // ----------------------------
-  // Form enhancement
-  // ----------------------------
-  const form = document.querySelector(".contact-form");
+// ----------------------------
+// Form enhancement (SAFE)
+// ----------------------------
+const form = document.querySelector(".contact-form");
+
+if (form) {
   const inputs = form.querySelectorAll("input, textarea");
 
   inputs.forEach((input) => {
@@ -151,9 +153,9 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   form.addEventListener("submit", (e) => {
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+    const name = form.querySelector("#name").value.trim();
+    const email = form.querySelector("#email").value.trim();
+    const message = form.querySelector("#message").value.trim();
 
     if (!name || !email || !message) {
       e.preventDefault();
@@ -164,9 +166,9 @@ window.addEventListener("DOMContentLoaded", function () {
     if (!email.includes("@")) {
       e.preventDefault();
       alert("Please enter a valid email address");
-      return;
     }
   });
+}
 
   // ----------------------------
   // Parallax effect on hero
@@ -224,3 +226,4 @@ window.addEventListener("DOMContentLoaded", function () {
     "color: #7c3aed; font-size: 14px;"
   );
 });
+
