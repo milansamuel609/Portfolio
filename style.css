@@ -1171,6 +1171,21 @@ footer {
   margin: 0 auto;
 }
 
+.footer-links {
+  margin-top: 0.5rem;
+}
+
+.footer-link {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--primary);
+}
+
 .footer-socials {
   display: flex;
   justify-content: center;
@@ -1442,4 +1457,83 @@ footer {
   width: 170px;
   flex-shrink: 0;
   margin: 0;
+}
+
+/* About sub-sections: Education & Experience */
+.subsection-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 2rem 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.education-block,
+.experience-block {
+  margin-top: 1.5rem;
+}
+
+.education-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  background: rgba(0, 212, 255, 0.03);
+  border-left: 3px solid var(--primary);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.edu-year {
+  color: var(--primary);
+  font-weight: 600;
+  white-space: nowrap;
+  font-size: 0.95rem;
+  min-width: 90px;
+}
+
+.edu-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
+
+.edu-details strong {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.experience-item {
+  padding: 1rem 1.5rem;
+  background: rgba(0, 212, 255, 0.03);
+  border-left: 3px solid var(--secondary);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.exp-role {
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.exp-desc {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Inline link style (used in resource-item) */
+.inline-link {
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(0, 212, 255, 0.5);
+  transition: border-color 0.3s ease;
+}
+
+.inline-link:hover {
+  border-color: var(--primary);
 }
