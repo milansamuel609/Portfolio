@@ -145,9 +145,10 @@
                         foundation in Linux, configuration auditing, and CI/CD workflows.
                     </p>
                     <p>
-                        This summer I'm a Google Summer of Code 2026 contributor with the JBoss Community,
-                        where I'm building <strong>jws-diag</strong>, a Core Java CLI that audits JBoss Web
-                        Server configuration files before they reach production. Before that, I ranked
+                        This summer I was a Google Summer of Code 2026 contributor with the JBoss Community,
+                        where I worked on <strong>jws-diag</strong>, a Core Java CLI for diagnosing JBoss Web
+                        Server / Tomcat installations. I built its <code>validate</code> command (configuration
+                        auditing before production) and its <code>bundle</code> command (redacted support bundles). Before that, I ranked
                         <strong>76th out of 40,000+ participants</strong> in GSSoC Extended 2024.
                     </p>
                     <p>
@@ -175,7 +176,7 @@
                         <h3 class="subsection-title"><i class="fas fa-briefcase"></i> Experience</h3>
                         <div class="experience-item">
                             <div class="exp-role">Open Source Developer – Google Summer of Code 2026, JBoss Community (May – Aug 2026)</div>
-                            <div class="exp-desc">Building jws-diag, a Core Java CLI (picocli, DOM API) that parses JBoss Web Server <code>server.xml</code> and <code>tomcat-users.xml</code> and reports security, TLS, and connector misconfigurations. 22 validation rules, INFO/WARN/ERROR severity levels, distinct exit codes so CI pipelines can fail on bad configs, and 226 JUnit 5 tests.</div>
+                            <div class="exp-desc">Contributed to jws-diag, a Core Java CLI (picocli, DOM API) for JBoss Web Server / Tomcat. Built the <code>validate</code> command: 22 rules (17 core + 5 stretch) covering security, TLS, and connector misconfigurations, with INFO/WARN/ERROR severities and distinct exit codes so CI pipelines can fail on bad configs. Also built the <code>bundle</code> command, a redacted <code>.tar.gz</code> support-bundle pipeline with DEFAULT and STRICT redaction. 6 merged PRs, with 260+ JUnit 5 tests that I wrote.</div>
                         </div>
                         <div class="experience-item">
                             <div class="exp-role">Open Source Contributor – GSSoC Extended 2024</div>
@@ -196,8 +197,8 @@
                         <div class="stat-label">jws-diag Validation Rules</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">226</div>
-                        <div class="stat-label">JUnit 5 Tests</div>
+                        <div class="stat-number">260+</div>
+                        <div class="stat-label">JUnit 5 Tests I Wrote</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number">3</div>
@@ -289,7 +290,7 @@
                     <div class="project-content">
                         <h3 class="project-title">jws-diag – JBoss Web Server Config Auditor (GSoC 2026)</h3>
                         <p class="project-description">
-                            A Core Java CLI diagnostic tool built during Google Summer of Code with the JBoss Community. It parses <code>server.xml</code> and <code>tomcat-users.xml</code> and runs 22 validation rules covering security basics, weak ciphers, certificate checks, and connector/port issues. Findings carry INFO/WARN/ERROR severities and the tool returns distinct exit codes, so a CI/CD pipeline can fail the build on a bad config. Backed by 226 JUnit 5 tests with isolated per-test fixtures.
+                            A Core Java CLI diagnostic toolkit for JBoss Web Server / Tomcat, built with the JBoss Community during Google Summer of Code 2026. My part: the <code>validate</code> command (22 rules for security, TLS certificates and ciphers, and connector/port issues, with INFO/WARN/ERROR findings and distinct exit codes for CI/CD) and the <code>bundle</code> command (redacted support bundles with DEFAULT and STRICT modes). Backed by 260+ JUnit 5 tests that I wrote, using isolated per-test fixtures.
                         </p>
                         <div class="project-tags">
                             <span class="tag">Java</span>
@@ -297,6 +298,16 @@
                             <span class="tag">DOM API</span>
                             <span class="tag">JUnit 5</span>
                             <span class="tag">CI/CD</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/web-servers/jws-diag"
+                                target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <a href="https://gist.github.com/milansamuel609/bc25428ac92e8fbc912506e8fcdb0b50"
+                                target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fas fa-file-lines"></i> Final Work Product
+                            </a>
                         </div>
                     </div>
                 </div>
